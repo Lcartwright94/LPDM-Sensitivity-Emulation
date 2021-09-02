@@ -1,14 +1,14 @@
 ##################################################################################
 ##################################################################################
 
-### This function adjusts the location of the observation towers to match the 
+### This function adjusts the location of the measurement sites to match the 
 ### grid. For example, if the grid is built using the lower left corner of each 
 ### cell, while observation tower locations are slightly off this, the function 
-### adjusts the coordinates of the observation tower to match.
+### adjusts the coordinates of the measurement site to match.
 
 ### Two arguments: locs_grid is the full spatial gridded domain, 
-###                tower_locations is the locations of all the observation 
-###                  towers (one x-y set per column).
+###                tower_locations is the locations of all the measurement sites
+###                (one x-y set per column).
 
 ##################################################################################
 ##################################################################################
