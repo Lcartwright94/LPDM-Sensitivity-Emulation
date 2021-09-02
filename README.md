@@ -28,41 +28,26 @@ There are a number of data files which accompany the scripts in this repository.
 
 ### NAME simulations
 
-### Data used in pre/post-processing and emulation
+### R Datasets created during pre/post-processing and emulation
 
+## To reproduce results and final plots in the paper
 
-
-### Official curated data set
-
-The official curated data set (including suitable meta data and dictionaries) can be accessed at [ http://dx.doi.org/10.26186/5cb7f14abd710](http://dx.doi.org/10.26186/5cb7f14abd710).
-
-## To reproduce results
-
-* Open either "Main_Ginninderra_Linux.R" or "Main_Ginninderra_Windows_Mac.R", depending on the operating system you run, in RStudio. Set the working directory to the folder containing the BayesianAT scripts, which you downloaded from Github (titled "Scripts" unless you have renamed it since downloading). This is done by going to Session -> Working Directory -> Choose Directory... in the top menu bar in RStudio. 
-
-* Once the working directory is set, ensure the required packages are installed. The required packages for this script are dplyr, tidyr, lubridate, fdrtool, coda, Matrix, and if running a Linux operating system, parallel. To load an already installed package (or check if a package is already installed), type 
+* Open a terminal/command line, and navigate the working directory to the "Data" folder (ensure you have downloaded and extracted the R Datasets within this folder).  
+* Activate the conda environment by running 
 
 ```diff
-library(<package_name>)
+conda activate EnvName
 ```
 
-into the console and hit the enter/return button. If the package is not yet installed, the Console will return a message saying that the package could not be found. To install a package, type 
+where EnvName is the name you gave your conda environment when creating it. 
+
+* In the activated conda environment, run 
 
 ```diff
-install.packages("<package_name>")
+Rscript Main.R
 ```
 
-into the Console, and hit the enter/return key. 
-
-* After installing the necessary packages, press the "Source" button in the top, right corner of the script panel. This will execute all commands in the script from top to bottom, reproducing all of the results using the full model, with both upwind and downwind measurements, and when the methane-point-source is active.
-
-## To reproduce plots in the paper
-
-* Open "Plots.R" in RStudio, and set the working directory as described above.
-
-* Once the working directory is set, ensure the required packages are installed via the instructions above. The required packages for this script are dplyr, lubridate, ggplot2, and ggpubr. 
-
-* After installing the necessary packages, press the "Source" button in the top, right corner of the script panel. This will execute all commands in the script from top to bottom, reproducing all of the plots. If the results from the paper have not yet been reproduced, then the final plot will not work, and an error will be produced. This is because the final plot is of the results and needs results files. If the results have been reproduced, your final plot should look like this:
+to perform the emulation, Monte Carlo sampling and rotation, calculation of metrics, and production of plots. The final metrics should match those given in the paper (provided you have not retrained the CVAE), and your final plots should look like these:
 
 <a rel="results" href="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/facet-503.png"><img alt="Results plot" style="border-width:0" src="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/facet-503.png" /></a>
 
@@ -72,8 +57,8 @@ into the Console, and hit the enter/return key.
 
 ## Software license
 
-Reproducible code for "Bayesian atmospheric tomography for detection and quantification of methane emissions: Application to data from the 2015 Ginninderra release experiment" by Cartwright et al.  
-Copyright (c) 2019 Laura Cartwright  
+Reproducible code for "Emulation of greenhouse-gas sensitivities using variational autoencoders", by Laura Cartwright, Andrew Zammit-Mangion, and Nicholas M. Deutscher.  
+Copyright (c) 2021 Laura Cartwright  
 Author: Laura Cartwright (lcartwri@uow.edu.au)
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
