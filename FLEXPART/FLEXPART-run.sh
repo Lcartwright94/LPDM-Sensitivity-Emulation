@@ -1,5 +1,40 @@
 #!/bin/bash
 
+##################################################################################
+##################################################################################
+
+# Reproducible code for "Emulation of greenhouse-gas sensitivities using variational autoencoders", 
+# by Laura Cartwright, Andrew Zammit-Mangion, and Nicholas M. Deutscher.  
+# Copyright (c) 2021 Laura Cartwright  
+# Author: Laura Cartwright (lcartwri@uow.edu.au)
+
+# This program is free software; you can redistribute it and/or modify it under the terms 
+# of the GNU General Public License as published by the Free Software Foundation; either 
+# version 2 of the License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+# See the GNU General Public License for more details.
+
+
+##################################################################################
+##################################################################################
+##################################################################################
+##################################################################################
+
+### This script will cycle through all of the sampled information in the specified 
+### 'samps-...' file, and complete a FLEXPART simulation for each set of values. 
+### To begin, ensure you have put the COMMAND and RELEASES files containing values 
+### of 00.00 for the lat, lon, date, and time variables. The script will then update
+### these values automatically for each subsequent run. 
+
+### You will also need to ensure the correct values are given in OUTGRID. 
+
+### To produce a different set of simulations, simply update the filename to one of 
+### the other given files, or create your own. 
+
+##################################################################################
+##################################################################################
 
 filename='samps-Europe-1.txt'
 
