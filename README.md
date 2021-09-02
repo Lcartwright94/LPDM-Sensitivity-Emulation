@@ -12,20 +12,25 @@ git clone https://github.com/Lcartwright94/LPDM-Sensitivity-Emulator
 
 ## Creating the Conda environment
 
-First ensure you have installed [Conda](https://docs.anaconda.com/anaconda/install/index.html). Then, check that the file "Conda-environment.yml" has been downloaded when you cloned the repository. From a terminal/command line, run 
+First ensure you have installed [Conda](https://docs.anaconda.com/anaconda/install/index.html). Then, check that the file "conda-environment.yml" has been downloaded when you cloned the repository. From a terminal/command line, run 
 
 ```diff
-conda env create -n EnvName -f Conda-environment.yml 
+conda env create -n EnvName -f conda-environment.yml 
 ```
 
 where "EnvName" is the name of the conda environment.
 
 ## Data files
 
-### CSV files used by the scripts
+There are a number of data files which accompany the scripts in this repository. They are broken into three groups: 
 
-* GA-inversion-data-1: This is the data for the 5.8 g/min release period 
-* GA-inversion-data-2: This is the data for the 5.0 g/min release period 
+### FLEXPART simulations
+
+### NAME simulations
+
+### Data used in pre/post-processing and emulation
+
+
 
 ### Official curated data set
 
