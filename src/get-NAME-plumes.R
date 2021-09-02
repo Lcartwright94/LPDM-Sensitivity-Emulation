@@ -1,6 +1,25 @@
 ##################################################################################
 ##################################################################################
 
+# Reproducible code for "Emulation of greenhouse-gas sensitivities using variational autoencoders", 
+# by Laura Cartwright, Andrew Zammit-Mangion, and Nicholas M. Deutscher.  
+# Copyright (c) 2021 Laura Cartwright  
+# Author: Laura Cartwright (lcartwri@uow.edu.au)
+
+# This program is free software; you can redistribute it and/or modify it under the terms 
+# of the GNU General Public License as published by the Free Software Foundation; either 
+# version 2 of the License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+# See the GNU General Public License for more details.
+
+
+##################################################################################
+##################################################################################
+##################################################################################
+##################################################################################
+
 ### This script reads in the NAME output from Anita. It then puts the plumes
 ### all together with one column per plume. The order will be all MHD plumes, 
 ### all RGL plumes, all TAC plumes, all TTA plumes (so time will cycle 4 times).
