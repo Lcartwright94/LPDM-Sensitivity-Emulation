@@ -1,6 +1,25 @@
 ##################################################################################
 ##################################################################################
 
+# Reproducible code for "Emulation of greenhouse-gas sensitivities using variational autoencoders", 
+# by Laura Cartwright, Andrew Zammit-Mangion, and Nicholas M. Deutscher.  
+# Copyright (c) 2021 Laura Cartwright  
+# Author: Laura Cartwright (lcartwri@uow.edu.au)
+
+# This program is free software; you can redistribute it and/or modify it under the terms 
+# of the GNU General Public License as published by the Free Software Foundation; either 
+# version 2 of the License, or (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+# See the GNU General Public License for more details.
+
+
+##################################################################################
+##################################################################################
+##################################################################################
+##################################################################################
+
 ### This script fits & trains the VAE which will be used to send plumes onto a 
 ### 20-dim latent space. The dimension of the latent space can be changed by 
 ### altering "latent_dim" just below. 
