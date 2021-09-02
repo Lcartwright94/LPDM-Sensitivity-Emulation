@@ -2,13 +2,23 @@
 
 This repository contains a number of datasets and accompanying scripts required to reproduce results presented in "Emulation of greenhouse-gas sensitivities using variational autoencoders", by Laura Cartwright, Andrew Zammit-Mangion, and Nicholas M. Deutscher.
 
-All scripts are written in [R](https://www.r-project.org/). The easiest way to run them (and the way described below) is via the terminal/command line. They can also easily be run via [RStudio](https://www.rstudio.com/). Note you must download and install R before RStudio.
+All scripts (except one shell script) are written in [R](https://www.r-project.org/), specifically, R 3.6.3. The easiest way to run them (and the way described below) is via the terminal/command line, and using the Conda environment included in this repository. The scripts can also easily be run via [RStudio](https://www.rstudio.com/). Note you must download and install R before RStudio.
 
 ## Downloading the repository
 
 This can either be done by clicking the green "Clone or download" button, or by running the following in the command line/terminal:
 
 git clone https://github.com/Lcartwright94/LPDM-Sensitivity-Emulator
+
+## Creating the Conda environment
+
+First ensure you have installed [Conda](https://docs.anaconda.com/anaconda/install/index.html). Then, check that the file "Conda-environment.yml" has been downloaded when you cloned the repository. From a terminal/command line, run 
+
+```diff
+conda env create -n EnvName -f Conda-environment.yml 
+```
+
+where "EnvName" is the name of the conda environment.
 
 ## Data files
 
