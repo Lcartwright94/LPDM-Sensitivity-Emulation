@@ -1,0 +1,63 @@
+FP_dx = 0.352
+FP_dy = 0.234
+
+FE_dx = 0.75 (Note the domains must be a multiple of the FE dx and FE dy or FE has a meltdown).
+FE_dy = 0.75 (Also note that the FE domain should be >= FP domain)
+
+
+
+
+EU (Europe, France, Spain, Portugal, Germany, Italy):
+
+Sample lat: 51.00 -- 70.00               FP lat: 46.00 -- 75.952 (128)              FE lat:  16.00 -- 81.25
+Sample lon: 2.00 -- 37.00              FP lon: -3.00 -- 42.056 (128)             FE lon: -3.00 -- 49.50
+
+Sample Time period: 2011-02-02 00:00:00 -- 2011-07-01 00:00:00
+FE Time period: 2011-01-01 00:00:00 -- 2011-07-01 00:00:00
+
+LAT-LON conversion lat: 60.976    LAT: 111194.93 m   LON: 53948.58 m
+
+
+
+
+
+
+Australia:
+
+Sample lat: -35.00 -- 5.00              FP lat: -40.00 -- -10.048 (128)               FE lat: -74.75 -- 10.75
+Sample lon:  117.00 -- 152.00             FP lon:  112.00 -- 157.056 (128)              FE lon:  92.00 -- 179.00
+
+Sample Time period: 2012-09-02 00:00:00 -- 2012-12-31 00:00:00
+FE Time period: 2012-08-01 00:00:00 -- 2012-12-31 00:00:00
+
+LAT-LON conversion lat: -25.024    LAT: 111194.90 m   LON: 100756.90 m
+
+
+
+
+Canada (Canada and some USA):
+
+Sample lat:  35.00 -- 55.00               FP lat:  30.00  --  59.952 (128)            FE lat:  12.00  -- 80.25
+Sample lon: -111.00 -- -76.00             FP lon: -116.00 -- -70.944 (128)             FE lon: -140.50 -- -70.00
+
+Sample Time period: 2013-02-02 00:00:00 -- 2013-07-01 00:00:00
+FE Time period: 2013-01-01 00:00:00 -- 2013-07-01 00:00:00
+
+LAT-LON conversion lat: 44.976    LAT: 111194.93 m   LON: 78659.12 m
+
+
+
+
+UK (UK, Ireland, France, Spain, Portugal):
+
+Sample lat:  41.00 -- 60.00               FP lat:  36.00 -- 65.952 (128)              FE lat:  16.00 -- 81.25
+Sample lon: -9.00 -- 26.00                FP lon: -15.00 -- 30.056 (128)              FE lon: -31.00 -- 30.50
+
+Sample Time period: 2014-09-02 00:00:00 -- 2014-12-31 00:00:00
+FE Time period: 2014-08-01 00:00:00 -- 2014-12-31 00:00:00
+
+LAT-LON conversion lat: 50.976    LAT: 111194.93 m   LON: 70012.89 m
+
+
+
+
