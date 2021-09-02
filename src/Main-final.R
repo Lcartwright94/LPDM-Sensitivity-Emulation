@@ -415,7 +415,10 @@ save(GP_emulated_unrotated_VAE_uncertainty, file = "GP-emulated-unrotated-VAE-un
 
 
 
-### Get metrics & reate same comparison plot as paper
+### Get metrics & create same comparison plot as paper
+## If you want more plots, either change ss to a single number manually, 
+## or create a for loop to build plots for multiple different plumes, 
+## indexed by a vector ss. 
 
 load("validation-plumes.rdata")
 ss <- 503
