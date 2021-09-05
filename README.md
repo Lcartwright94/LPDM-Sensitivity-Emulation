@@ -45,6 +45,8 @@ conda activate EnvName
 
 where EnvName is the name you gave your conda environment when creating it. 
 
+* Now open "main.R" and adjust the name of the conda environment at the top of the script to match the name of your conda environment. You will also likely need to adjust the number of cores to suit the machine you are using. Save and close the file.  
+
 * In the activated conda environment, run 
 
 ```diff
