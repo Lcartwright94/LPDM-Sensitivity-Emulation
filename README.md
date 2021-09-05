@@ -22,9 +22,13 @@ where "EnvName" is the name of the conda environment.
 
 ## Data files
 
-There are a number of data files which accompany the scripts in this repository. They are broken into three groups: 
+There are a number of data files which accompany the scripts in this repository. You can access and download the data [here](https://hpc.niasra.uow.edu.au/ckan/dataset/r-data-lpdm-emulation). They are broken into three groups: 
 
 ### FLEXPART simulations
+
+These are the raw output files from FLEXPART. They are broken into four groups, based on the region over which the simulations were performed: Australia, Canada, Europe, or the UK. In each group of files, there are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed. 
+
+Information on how to reproduce these FLEXPART outputs can be found within the FLEXPART folder in this repository. 
 
 ### NAME simulations
 
