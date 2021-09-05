@@ -26,13 +26,17 @@ There are a number of data files which accompany the scripts in this repository.
 
 ### FLEXPART simulations
 
-These are the raw output files from FLEXPART. They are broken into four groups, based on the region over which the simulations were performed: Australia, Canada, Europe, or the UK. In each group of files, there are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed. 
+These are the raw output files from FLEXPART. They are broken into four groups, based on the region over which the simulations were performed: Australia, Canada, Europe, or the UK. There are 5000 simulations per region, and a 5-6 month time period over which to perform the simulations was allocated to each region. Simulations were performed at randomly drawn spatial locations and time points (within the allocated time frame). There is one output file per simulation. In each group of files, there are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed. 
 
 Information on how to reproduce these FLEXPART outputs can be found within the FLEXPART folder in this repository. 
 
 ### NAME simulations
 
+These are the cumulated sensitivity plumes from NAME, simulated over the UK and Ireland from January to April 2014. Simulations were performed every 2-hours at four measurement sites. There is one .txt file per measurement site, and per month. There are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed.
+
 ### R Datasets created during pre/post-processing and emulation
+
+This file contains the remaining datasets not included in the NAME and FLEXPART files, produced at each stage in the pre/post-processing and emulation.
 
 ## To reproduce results and final plots in the paper
 
@@ -70,9 +74,3 @@ Author: Laura Cartwright (lcartwri@uow.edu.au)
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-
-## Data license
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />All data in this repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> (Geoscience Australia).
-
