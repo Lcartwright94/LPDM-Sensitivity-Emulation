@@ -20,7 +20,7 @@
 ##################################################################################
 ##################################################################################
 
-### This script reads in FLEXPART output from a run. It builds the plume by 
+### This script reads in the raw FLEXPART outputs. It builds the plume by 
 ### summing over the output and converting to ns/g. 
 
 ### You can supply this function with multiple simulation run dates/times,
