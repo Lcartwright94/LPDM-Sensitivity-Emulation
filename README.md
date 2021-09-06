@@ -24,19 +24,23 @@ where "EnvName" is the name of the conda environment.
 
 There are a number of data files which accompany the scripts in this repository. You can access and download the data [here](https://hpc.niasra.uow.edu.au/ckan/dataset/r-data-lpdm-emulation). They are broken into three groups: 
 
-### FLEXPART simulations
+#### FLEXPART simulations
 
 These are the raw output files from FLEXPART. They are broken into four groups, based on the region over which the simulations were performed: Australia, Canada, Europe, or the UK. There are 5000 simulations per region, and a 5-6 month time period over which to perform the simulations was allocated to each region. Simulations were performed at randomly drawn spatial locations and time points (within the allocated time frame). There is one output file per simulation. In each group of files, there are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed. 
 
 Information on how to reproduce these FLEXPART outputs can be found within the FLEXPART folder in this repository. 
 
-### NAME simulations
+#### NAME simulations
 
 These are the cumulated sensitivity plumes from NAME, simulated over the UK and Ireland from January to April 2014. Simulations were performed every 2-hours at four measurement sites. There is one .txt file per measurement site, and per month. There are also three R-datasets. Two contain the post-processed, cumulated sensitivy plumes both before and after translation and rotation, and the third contains the coordinates of the spatial grid over which the simulations were performed.
 
-### R Datasets created during pre/post-processing and emulation
+#### R Datasets created during pre/post-processing and emulation
 
 This file contains the remaining datasets not included in the NAME and FLEXPART files, produced at each stage in the pre/post-processing and emulation.
+
+## Scripts
+
+There are a number of scripts included in this repository. Further details of their purpose can be found in "readme.md" contained in the src folder of this repository. 
 
 ## To reproduce results and final plots in the paper
 
