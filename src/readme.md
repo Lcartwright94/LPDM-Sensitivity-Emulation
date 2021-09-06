@@ -4,8 +4,8 @@ Below is a list detailing the function of each script in this folder. These scri
 
 ## Functions
 
-* adjust-tower-locations: 
-* cart-to-polar:
+* ***adjust-tower-locations:*** hh
+* ***cart-to-polar:*** hh
 * covariances:
 * emulator-gp:
 * estimate-dep-angle:
