@@ -18,9 +18,20 @@ Below are the steps necessary to reproduce the raw FLEXPAT outputs.
 ./run.sh
 ```
 
-* Once you have the necessary meta data, ensure that you have 
+* Once you have the necessary meta data, ensure that you have correctly set the paths in "pathnames". Then, replace "COMMAND" and "RELEASES" in your FLEXPART folders with those from this repository. You will need to do this each time you begin a looped run to reproduce these outputs. This is because the versions saved in this repository have a number of values set to 00.00, which allows the automatic loop of simulations to begin. 
 
+* Choose the appropriate "AVAILABLE-######" file from this repository, and replace AVAILABLE in your FLEXPART folder with this one, at the same time renaming it to simply "AVAILABLE". 
 
+* Now take the "OUTGRID" file from this repository and replace OUTGRID in your FLEXPART repository with this one. Currently OUTGRID is set up for Europe simulations. If you would like to produce simulations over one of the other three regions, you will need to update the lat-lon values in line with "domain-info.txt". 
 
+* Download "FLEXPART-run.sh" from this repository, and place it in the "options" folder of your FLEXPART folders. Run the simulations by navigating to "options", and in a terminal/command line running 
+
+```diff
+./FLEXPART-run.sh
+```
+
+Some time later, your output folder should contain the output file from each of the runs. 
+
+# Post-processing
 
 Scripts to post-process the raw FLEXPART output, and turn it into the sensitivity plumes used to train the CVAE and fit the EOFs can be found in the "src" folder of this repository. 
