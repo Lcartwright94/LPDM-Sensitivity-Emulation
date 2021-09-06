@@ -20,8 +20,7 @@
 ##################################################################################
 ##################################################################################
 
-### These functions will plot a single plume, if given the x and y coordinates, 
-### and the sensitivity values in a dataframe.
+### These functions will produce various plots of the plumes, depending on arguments.
 
 ### Arguments specific to each function: 
 
