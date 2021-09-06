@@ -20,8 +20,8 @@
 ##################################################################################
 ##################################################################################
 
-### This script will zero the location of plumes (such that they depart from the 
-### origin. Then, it will rotate the plumes so that their departure mid-line is 
+### This script will zero the location of FLEXPART plumes (such that they depart from the 
+### origin). Then, it will rotate the plumes so that their departure mid-line is 
 ### the x-axis.
 
 ##################################################################################
