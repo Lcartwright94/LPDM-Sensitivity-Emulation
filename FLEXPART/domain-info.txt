@@ -17,6 +17,7 @@ FE Time period: 2011-01-01 00:00:00 -- 2011-07-01 00:00:00
 
 LAT-LON conversion lat: 60.976    LAT: 111194.93 m   LON: 53948.58 m
 
+FE prefix: Europe
 
 
 
@@ -32,6 +33,10 @@ FE Time period: 2012-08-01 00:00:00 -- 2012-12-31 00:00:00
 
 LAT-LON conversion lat: -25.024    LAT: 111194.90 m   LON: 100756.90 m
 
+FE prefix: Aus
+
+
+
 
 
 
@@ -44,6 +49,10 @@ Sample Time period: 2013-02-02 00:00:00 -- 2013-07-01 00:00:00
 FE Time period: 2013-01-01 00:00:00 -- 2013-07-01 00:00:00
 
 LAT-LON conversion lat: 44.976    LAT: 111194.93 m   LON: 78659.12 m
+
+FE prefix: Canada
+
+
 
 
 
@@ -58,6 +67,6 @@ FE Time period: 2014-08-01 00:00:00 -- 2014-12-31 00:00:00
 
 LAT-LON conversion lat: 50.976    LAT: 111194.93 m   LON: 70012.89 m
 
-
+FE prefix: UK
 
 
