@@ -8,7 +8,7 @@ All scripts (except one shell script) are written in [R](https://www.r-project.o
 
 This can either be done by clicking the green "Clone or download" button, or by running the following in the command line/terminal:
 
-git clone https://github.com/Lcartwright94/LPDM-Sensitivity-Emulator
+git clone https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation
 
 ## Creating the Conda environment
 
