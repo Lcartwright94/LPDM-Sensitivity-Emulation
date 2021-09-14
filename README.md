@@ -53,10 +53,14 @@ use_condaenv("flexpart", required = TRUE) # Change "flexpart" to the name of you
 
 * Now you can check for and install the necessary packages. The required packages for this work are reticulate, tensorflow, keras, dplyr, tidyr, gstat, fields, RNetCDF, ggplot2, gridExtra, and if running a Linux operating system, parallel. To load an already installed package (or check if a package is already installed), type
 
+```diff
 library(<package_name>)
+```
 into the console and hit the enter/return button. If the package is not yet installed, the Console will return a message saying that the package could not be found. To install a package, type
 
+```diff
 install.packages("<package_name>")
+```
 into the Console, and hit the enter/return key.
 
 * The scripts included in this repository encompass the entire process from processing FLEXPART and NAME outputs, right through to the calculation of metrics after emulation. To recreate this process, a number of scripts need to be run in succession: get-FLEXPART-plumes-for-training.R, get-NAME-plumes-for-training.R, create-rotated-plumes-for-training.R, create-rotated-plumes-for-application.R, create-trianing-test-validation.R, create-CVAE-basis.R, create-EOF-basis.R, train-CVAE.R, train-EOFs.R, Main.R. To skip through to reproducing the plots and metrics from the paper, you need only run Main.R. To run each script, complete the following:
