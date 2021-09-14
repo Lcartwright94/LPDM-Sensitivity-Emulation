@@ -18,7 +18,7 @@ First ensure you have installed [Conda](https://docs.anaconda.com/anaconda/insta
 conda env create -n EnvName -f conda-environment.yml 
 ```
 
-where "EnvName" is the name of the conda environment.
+where "EnvName" is the name of the conda environment. To match my environment, name is "flexpart". If you give it a different name, you'll need to update its name in Main.R and Train-CVAE.R. 
 
 ## Data files
 
@@ -44,6 +44,23 @@ There are a number of scripts included in this repository. Further details of th
 
 ## To reproduce results and final plots in the paper
 
+* Before running any of the scripts, please ensure the required R packages are installed. Also, ensure you load the conda environment before installing the packages. To do this, run 
+
+```diff 
+install.packages("reticulate")
+use_condaenv("flexpart", required = TRUE) # Change "flexpart" to the name of your own Conda environment 
+```
+
+* Now you can check for and install the necessary packages. The required packages for this work are reticulate, tensorflow, keras, dplyr, tidyr, gstat, fields, RNetCDF, ggplot2, gridExtra, and if running a Linux operating system, parallel. To load an already installed package (or check if a package is already installed), type
+
+library(<package_name>)
+into the console and hit the enter/return button. If the package is not yet installed, the Console will return a message saying that the package could not be found. To install a package, type
+
+install.packages("<package_name>")
+into the Console, and hit the enter/return key.
+
+* The scripts included in this repository encompass the entire process from processing FLEXPART and NAME outputs, right through to the calculation of metrics after emulation. To recreate this process, a number of scripts need to be run in succession: get-FLEXPART-plumes-for-training.R, get-NAME-plumes-for-training.R, create-rotated-plumes-for-training.R, create-rotated-plumes-for-application.R, create-trianing-test-validation.R, create-CVAE-basis.R, create-EOF-basis.R, train-CVAE.R, train-EOFs.R, Main.R. To skip through to reproducing the plots and metrics from the paper, you need only run Main.R. To run each script, complete the following:
+
 * Open a terminal/command line, and navigate the working directory to the "Data" folder (ensure you have downloaded and extracted the R Datasets within this folder).  
 * Activate the conda environment by running 
 
@@ -53,9 +70,9 @@ conda activate EnvName
 
 where EnvName is the name you gave your conda environment when creating it. 
 
-* Now open "main.R" and adjust the name of the conda environment at the top of the script to match the name of your conda environment. You will also likely need to adjust the number of cores to suit the machine you are using. Save and close the file.  
+* Now open the script you want to run, and, if needed, adjust the name of the conda environment at the top of the script to match the name of your conda environment. You may also need to adjust the number of cores to suit the machine you are using. Save and close the file.  
 
-* In the activated conda environment, run 
+* In the activated conda environment, run, for example, 
 
 ```diff
 Rscript Main.R
