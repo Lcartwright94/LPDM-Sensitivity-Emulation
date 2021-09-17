@@ -75,7 +75,7 @@ ni <- length(time_stamps)
 # Change this to mclapply when you have a lot of plumes maybe
 for (i in 1:ni) {
 
-    ds <- open.nc(con = paste0("../Data/FLEXPART-Sims/surface-EU/",time_stamps[i]))
+    ds <- open.nc(con = paste0("../Data/FLEXPART-sims/surface-EU/",time_stamps[i]))
     FP_output <- read.nc(ncfile = ds)
     
     Lon <- FP_output$longitude
