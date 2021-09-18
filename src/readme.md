@@ -18,6 +18,7 @@ These scripts describe the emulation process beginning with raw FLEXPART outputs
 * ***neg-log-like:*** This function computes the negative log-likelihood, Gaussian mean zero. Note this will add (epsilon * I) to the covariance (for MLE). 
 * ***optimise-GP-params-HPC:*** This function finds the optimised spatial length scales, temporal length scales, and signal variances for each coefficient, as well as sin theta and cos theta.
 * ***plot-plume:*** These functions will produce various plots of the plumes, depending on arguments.
+* ***rotate-plumes-to-zero:*** This function will zero and rotate the plumes so that their departure mid-line is the x-axis.
 * ***time-to-numeric:*** This function turns the time stamps into numerical values representing hours since Jan 1st 00:00:00 2010. 
 * ***unrotate-plume:*** This function rotates the emulated plume back to the original space.
 
