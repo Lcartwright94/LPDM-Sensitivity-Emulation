@@ -32,7 +32,7 @@ These scripts describe the emulation process beginning with raw FLEXPART outputs
 ## Training the CVAE and fitting the EOFs
 
 * ***create-trianing-test-validation:*** This script reads in the NAME plumes, both rotated and unrotated, and then divides them into a training set, and a validation set (and saves them).
-* * ***train-CVAE:*** This script fits & trains the CVAE which will be used to send plumes onto a 20-dim latent space.
+* ***train-CVAE:*** This script fits & trains the CVAE which will be used to send plumes onto a 20-dim latent space.
 * ***train-EOFs:*** This script creates the EOFs by doing the full singular-value-decomposition. Only the desired number of EOFs are saved. If the number changes, or the data to be input changes, you'll need to re-run this script.
 * ***create-CVAE-basis:*** This script creates the VAE basis by running the data to use in the emulation through a pre-trained and loaded-in Encoder.
 * ***create-EOF-basis:*** This script creates the EOF basis for the NAME UK plumes. Values for coefficients are computed via ordinary least squares regression.
