@@ -79,7 +79,7 @@ where EnvName is the name you gave your conda environment when creating it.
 * In the activated conda environment, run, for example, 
 
 ```diff
-Rscript Main.R
+Rscript ../src/Main.R
 ```
 
 to perform the emulation, Monte Carlo sampling and rotation, calculation of metrics, and production of plots. The final metrics should match those given in the paper (provided you have not retrained the CVAE), and your final plots should look like these:
