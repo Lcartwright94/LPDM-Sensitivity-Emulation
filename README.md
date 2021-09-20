@@ -63,7 +63,11 @@ install.packages("<package_name>")
 ```
 into the Console, and hit the enter/return key.
 
-* The scripts included in this repository encompass the entire process from processing FLEXPART and NAME outputs, right through to the calculation of metrics after emulation. To recreate this process, a number of scripts need to be run in succession: get-FLEXPART-plumes-for-training.R, get-NAME-plumes-for-training.R, create-rotated-plumes-for-training.R, create-rotated-plumes-for-application.R, create-trianing-test-validation.R, create-CVAE-basis.R, create-EOF-basis.R, train-CVAE.R, train-EOFs.R, Main.R. To skip through to reproducing the plots and metrics from the paper, you need only run Main.R. To run each script, complete the following:
+* The scripts included in this repository encompass the entire process from processing FLEXPART and NAME outputs, right through to the calculation of metrics after emulation. To recreate this process, a number of scripts need to be run in succession: get-FLEXPART-plumes-for-training.R, get-NAME-plumes-for-training.R, create-rotated-plumes-for-training.R, create-rotated-plumes-for-application.R, create-trianing-test-validation.R, create-CVAE-basis.R, create-EOF-basis.R, train-CVAE.R, train-EOFs.R, Main.R. To skip through to reproducing the plots and metrics from the paper, you need only run Main.R. 
+
+* Please note, however, that if you choose to train the CVAE yourself, the end results will be different. If you want to re-create our results exactly, please do not re-run "train-CVAE.R". 
+
+* To run each script, complete the following:
 
 * Open a terminal/command line, and navigate the working directory to the "Data" folder (ensure you have downloaded and extracted the R Datasets within this folder).  
 * Activate the conda environment by running 
