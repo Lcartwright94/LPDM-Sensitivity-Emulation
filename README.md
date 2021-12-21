@@ -88,7 +88,7 @@ Rscript ../src/Main.R
 
 to perform the emulation, Monte Carlo sampling and rotation, calculation of metrics, and production of plots. The final metrics should match those given in the paper (provided you have not retrained the CVAE), and your final plots should look like these:
 
-<a rel="results" href="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/name-503.png"><img alt="Results plot" style="border-width:0" src="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/facet-503.png" /></a>
+<a rel="results" href="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/name-503.png"><img alt="Results plot" style="border-width:0" src="https://github.com/Lcartwright94/LPDM-Sensitivity-Emulation/blob/main/IMG/name-503.png" /></a>
 
 
 
